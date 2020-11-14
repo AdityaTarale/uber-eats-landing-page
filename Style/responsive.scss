@@ -1,0 +1,259 @@
+/* 6 */
+@media screen and (min-width: 370px) and (max-width: 667px) {
+  html {
+    font-size: 35%;
+  }
+
+  /* nav */
+  nav {
+    position: relative;
+    background-color: #fff;
+    .nav-wrapper {
+      svg.hamburger {
+        font-size: 2em;
+      }
+      .signIn {
+        background-color: #eeeeee;
+        font-size: 2.8em;
+        font-weight: 400;
+        font-family: 'Ubermove';
+        border-radius: 0;
+        padding: 0.5em 0.8em;
+      }
+    }
+  }
+
+  /* header */
+  header {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img:first-child,
+    img:nth-child(2) {
+      display: none;
+    }
+    img:last-of-type {
+      
+      display: block;
+      width: 100%;
+      height: 35em;
+      position: absolute;
+      bottom:-25;
+    }
+    .header-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      span:first-child {
+        display: none;
+      }
+      span:nth-child(2) {
+        display: block;
+        font-size: 6em;
+        font-weight: 100;
+      }
+
+      .input-deliver-findFoodButton {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+
+        .input-content {
+          svg {
+            padding: 1em 1em 4em;
+          }
+          input {
+            width: 100%;
+            padding: 1.8em 5.5em;
+            font-size: 1.6em;
+            margin-bottom: 2em;
+            margin-right: 0em;
+          }
+        }
+        .deliver-content {
+          display: none;
+        }
+        .findfoodBtn {
+          width: 100%;
+          font-size: 2.6em;
+          padding: 1.3em;
+        }
+      }
+      p {
+        display: none;
+      }
+    }
+  }
+
+  /* food near me */
+  .foodNearMe {
+    .foodNearMe-wrapper {
+      .foodNearMe-head {
+        .foodNearMe-link {
+          display: none;
+        }
+      }
+    }
+  }
+
+  /* loveruber */
+  .logoAndroidIOS {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* business */
+  .business {
+    .business-wrapper {
+      grid-template-columns: 1fr;
+      grid-row-gap: 5em;
+    }
+  }
+
+  /* cities */
+  .cities {
+    .cities-wrapper {
+      .map {
+        display: none;
+      }
+      .city {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        a {
+          font-size: 2.5em;
+        }
+      }
+    }
+  }
+
+  /* American SF */
+  .americanSF {
+    .americanSF-wrapper {
+      .americanSF-head {
+        h1 {
+          width: 100%;
+        }
+        .americanSF-link {
+          display: none;
+        }
+      }
+      .americanSF-menu{
+        .offerBox{
+          p{
+            font-size: 2em;
+          }
+          a{
+            font-size: 1.4em;
+          }
+        }
+      }
+    }
+  }
+
+  /* Countries */
+  .countries {
+    .countries-wrapper {
+      .country {
+        grid-template-columns: repeat(2, 1fr);
+        a {
+          font-size: 2.5em;
+        }
+      }
+    }
+  }
+
+  footer {
+    overflow: hidden;
+    .footer-wrapper {
+      margin: 3em;
+      .footer-top {
+        height: auto;
+        margin: 0;
+        flex-direction: column;
+        align-items: start;
+        .footer-img {
+          height: auto;
+          img {
+            padding: 4em 0;
+          }
+          .app-store {
+            img:last-child {
+              width: 24em;
+            }
+          }
+        }
+        .about-help {
+          .about-help-wrapper {
+            flex-direction: column;
+            .about {
+              p:first-child a,
+              a {
+                font-size: 1.4em;
+              }
+              p {
+                padding: 0.6em 0;
+              }
+            }
+            .help {
+              @extend .about;
+            }
+          }
+        }
+      }
+      .footer-bottom {
+        flex-direction: column;
+        align-items: start;
+
+        .ptpc {
+          align-items: start;
+          flex-direction: column;
+          a,
+          p {
+            font-size: 1.4em;
+            margin: 0;
+            padding: 0.5em 0;
+          }
+        }
+      }
+    }
+  }
+
+  /* Side bar */
+  .sideBar-wrapper {
+    width: 50em;
+    left: -50em;
+    .sideBar-nav {
+      padding: 4em;
+      width: 40em;
+      .signUP {
+        font-size: 2.8em;
+      }
+      .uberAccount{
+        .uberAccount-link{
+          a{
+            font-size: 2.5em;
+          }
+        }
+        .tag-line-logo{
+          padding: 3em 0;
+        svg{
+          width: 15em;
+        }
+        h1{
+          font-size: 2.5em;
+        }
+      }
+      }
+    }
+  }
+}
+
+
+
+
+

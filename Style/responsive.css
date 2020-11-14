@@ -1,0 +1,248 @@
+/* 6 */
+@media screen and (min-width: 370px) and (max-width: 667px) {
+  html {
+    font-size: 35%;
+  }
+  /* nav */
+  nav {
+    position: relative;
+    background-color: #fff;
+  }
+  nav .nav-wrapper svg.hamburger {
+    font-size: 2em;
+  }
+  nav .nav-wrapper .signIn {
+    background-color: #eeeeee;
+    font-size: 2.8em;
+    font-weight: 400;
+    font-family: 'Ubermove';
+    border-radius: 0;
+    padding: 0.5em 0.8em;
+  }
+  /* header */
+  header {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header img:first-child,
+  header img:nth-child(2) {
+    display: none;
+  }
+  header img:last-of-type {
+    display: block;
+    width: 100%;
+    height: 35em;
+    position: absolute;
+    bottom: -25;
+  }
+  header .header-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header .header-content span:first-child {
+    display: none;
+  }
+  header .header-content span:nth-child(2) {
+    display: block;
+    font-size: 6em;
+    font-weight: 100;
+  }
+  header .header-content .input-deliver-findFoodButton {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: auto;
+  }
+  header .header-content .input-deliver-findFoodButton .input-content svg {
+    padding: 1em 1em 4em;
+  }
+  header .header-content .input-deliver-findFoodButton .input-content input {
+    width: 100%;
+    padding: 1.8em 5.5em;
+    font-size: 1.6em;
+    margin-bottom: 2em;
+    margin-right: 0em;
+  }
+  header .header-content .input-deliver-findFoodButton .deliver-content {
+    display: none;
+  }
+  header .header-content .input-deliver-findFoodButton .findfoodBtn {
+    width: 100%;
+    font-size: 2.6em;
+    padding: 1.3em;
+  }
+  header .header-content p {
+    display: none;
+  }
+  /* food near me */
+  .foodNearMe .foodNearMe-wrapper .foodNearMe-head .foodNearMe-link {
+    display: none;
+  }
+  /* loveruber */
+  .logoAndroidIOS {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  /* business */
+  .business .business-wrapper {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-row-gap: 5em;
+  }
+  /* cities */
+  .cities .cities-wrapper .map {
+    display: none;
+  }
+  .cities .cities-wrapper .city {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+  }
+  .cities .cities-wrapper .city a {
+    font-size: 2.5em;
+  }
+  /* American SF */
+  .americanSF .americanSF-wrapper .americanSF-head h1 {
+    width: 100%;
+  }
+  .americanSF .americanSF-wrapper .americanSF-head .americanSF-link {
+    display: none;
+  }
+  .americanSF .americanSF-wrapper .americanSF-menu .offerBox p {
+    font-size: 2em;
+  }
+  .americanSF .americanSF-wrapper .americanSF-menu .offerBox a {
+    font-size: 1.4em;
+  }
+  /* Countries */
+  .countries .countries-wrapper .country {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .countries .countries-wrapper .country a {
+    font-size: 2.5em;
+  }
+  footer {
+    overflow: hidden;
+  }
+  footer .footer-wrapper {
+    margin: 3em;
+  }
+  footer .footer-wrapper .footer-top {
+    height: auto;
+    margin: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  footer .footer-wrapper .footer-top .footer-img {
+    height: auto;
+  }
+  footer .footer-wrapper .footer-top .footer-img img {
+    padding: 4em 0;
+  }
+  footer .footer-wrapper .footer-top .footer-img .app-store img:last-child {
+    width: 24em;
+  }
+  footer .footer-wrapper .footer-top .about-help .about-help-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .footer-wrapper .footer-top .about-help .about-help-wrapper .about p:first-child a, footer .footer-wrapper .footer-top .about-help .about-help-wrapper .help p:first-child a,
+  footer .footer-wrapper .footer-top .about-help .about-help-wrapper .about a,
+  footer .footer-wrapper .footer-top .about-help .about-help-wrapper .help a {
+    font-size: 1.4em;
+  }
+  footer .footer-wrapper .footer-top .about-help .about-help-wrapper .about p, footer .footer-wrapper .footer-top .about-help .about-help-wrapper .help p {
+    padding: 0.6em 0;
+  }
+  footer .footer-wrapper .footer-bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  footer .footer-wrapper .footer-bottom .ptpc {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .footer-wrapper .footer-bottom .ptpc a,
+  footer .footer-wrapper .footer-bottom .ptpc p {
+    font-size: 1.4em;
+    margin: 0;
+    padding: 0.5em 0;
+  }
+  /* Side bar */
+  .sideBar-wrapper {
+    width: 50em;
+    left: -50em;
+  }
+  .sideBar-wrapper .sideBar-nav {
+    padding: 4em;
+    width: 40em;
+  }
+  .sideBar-wrapper .sideBar-nav .signUP {
+    font-size: 2.8em;
+  }
+  .sideBar-wrapper .sideBar-nav .uberAccount .uberAccount-link a {
+    font-size: 2.5em;
+  }
+  .sideBar-wrapper .sideBar-nav .uberAccount .tag-line-logo {
+    padding: 3em 0;
+  }
+  .sideBar-wrapper .sideBar-nav .uberAccount .tag-line-logo svg {
+    width: 15em;
+  }
+  .sideBar-wrapper .sideBar-nav .uberAccount .tag-line-logo h1 {
+    font-size: 2.5em;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

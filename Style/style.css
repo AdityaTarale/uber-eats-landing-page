@@ -1,0 +1,1063 @@
+@font-face {
+  font-family: Ubermove;
+  src: url(/font/UberMoveMedium.otf);
+}
+
+@font-face {
+  font-family: UbermoveBold;
+  src: url(/font/UberMoveBold.otf);
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* nav */
+nav {
+  width: 100%;
+  height: 9em;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  position: fixed;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  z-index: 1000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .nav-wrapper {
+  margin: 0 4em;
+  height: inherit;
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .nav-wrapper svg:first-child {
+  width: 2.3em;
+  height: 1.9em;
+}
+
+nav .nav-wrapper svg:nth-child(2) {
+  margin-left: 3.5em;
+}
+
+nav .nav-wrapper .signIn {
+  border: none;
+  background-color: #fff;
+  border-radius: 15px;
+  font-size: 1.45em;
+  padding: 0.5em 0.7em;
+  letter-spacing: 0.5px;
+  position: absolute;
+  right: 0;
+}
+
+nav .nav-wrapper .signIn:focus {
+  outline: none;
+}
+
+nav .nav-wrapper .input-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 75em;
+  position: relative;
+  margin-left: 8em;
+}
+
+nav .nav-wrapper .input-content svg {
+  position: absolute;
+  padding: 1.2em;
+  font-size: 1.2em;
+}
+
+nav .nav-wrapper .input-content input {
+  width: 100%;
+  padding: 1.1em 3.5em;
+  margin-right: 0.8em;
+  font-size: 1.6em;
+  font-family: 'Ubermove';
+  font-weight: 400;
+  letter-spacing: 1px;
+  border: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  background-color: #f6f6f6;
+  border-bottom: 2px solid #e2e2e2;
+}
+
+nav .nav-wrapper .input-content input:focus {
+  outline: none;
+  border-bottom: 3px solid #000;
+}
+
+nav .nav-wrapper .input-content {
+  display: none;
+}
+
+@-webkit-keyframes inputSlide {
+  from {
+    width: 0;
+  }
+  to {
+    width: 75em;
+  }
+}
+
+@keyframes inputSlide {
+  from {
+    width: 0;
+  }
+  to {
+    width: 75em;
+  }
+}
+
+/* header */
+header {
+  background-color: #ffd7d2;
+  height: 75.1em;
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header img {
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+header img:first-of-type {
+  left: 0;
+  top: 0;
+}
+
+header img:nth-child(2) {
+  right: -85;
+  top: 0;
+}
+
+header img:last-of-type {
+  display: none;
+}
+
+header .header-content {
+  width: 90.5em;
+  height: 19em;
+  margin: 0 4em;
+  z-index: 2;
+}
+
+header .header-content span {
+  font-size: 5.2em;
+  font-weight: 400;
+  font-family: 'Ubermovebold';
+  display: block;
+  padding-bottom: 0.7em;
+}
+
+header .header-content span:nth-child(2) {
+  display: none;
+}
+
+header .header-content .input-deliver-findFoodButton {
+  height: 5.8em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header-content .input-deliver-findFoodButton .input-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 55em;
+  position: relative;
+}
+
+header .header-content .input-deliver-findFoodButton .input-content svg {
+  position: absolute;
+  padding: 1em;
+}
+
+header .header-content .input-deliver-findFoodButton .input-content input {
+  width: 100%;
+  padding: 1.4em 3.5em;
+  margin-right: 0.8em;
+  font-size: 1.4em;
+  font-family: 'Ubermove';
+  font-weight: 400;
+  letter-spacing: 1px;
+  border: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+header .header-content .input-deliver-findFoodButton .input-content input:focus {
+  outline: none;
+  border-bottom: 3px solid #000;
+}
+
+header .header-content .input-deliver-findFoodButton .deliver-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20.5em;
+  position: relative;
+}
+
+header .header-content .input-deliver-findFoodButton .deliver-content svg:first-child {
+  position: absolute;
+  padding: 1em;
+}
+
+header .header-content .input-deliver-findFoodButton .deliver-content svg:last-child {
+  position: absolute;
+  right: 0;
+  padding-right: 2em;
+}
+
+header .header-content .input-deliver-findFoodButton .deliver-content select {
+  width: 100%;
+  padding: 1.3em 2.8em;
+  margin-right: 0.8em;
+  font-size: 1.5em;
+  font-family: 'Ubermove';
+  font-weight: 400;
+  letter-spacing: 1px;
+  border: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+header .header-content .input-deliver-findFoodButton .deliver-content select:focus {
+  outline: none;
+  border-bottom: 3px solid #000;
+}
+
+header .header-content .input-deliver-findFoodButton .findfoodBtn {
+  color: #fff;
+  background: #000;
+  font-size: 1.8em;
+  font-family: 'Ubermove';
+  font-weight: 400;
+  border: none;
+  height: 95%;
+  padding: 0 1em;
+}
+
+header .header-content .input-deliver-findFoodButton .findfoodBtn:focus {
+  outline: none;
+}
+
+header .header-content .input-deliver-findFoodButton .findfoodBtn:hover {
+  background-color: #1a1a1a;
+}
+
+header .header-content p {
+  font-family: 'Ubermove';
+  font-size: 1.4em;
+  padding: 1em 0;
+  margin: 0.5em 0;
+  letter-spacing: 0.5px;
+}
+
+header .header-content p a {
+  color: #000;
+}
+
+/* food near me */
+.foodNearMe .foodNearMe-wrapper {
+  margin: 0 4em;
+  padding: 4em 0;
+}
+
+.foodNearMe .foodNearMe-wrapper .foodNearMe-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.foodNearMe .foodNearMe-wrapper .foodNearMe-head h1 {
+  font-size: 3.6em;
+  font-weight: 800;
+  font-family: 'Ubermove';
+}
+
+.foodNearMe .foodNearMe-wrapper .foodNearMe-head .foodNearMe-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.foodNearMe .foodNearMe-wrapper .foodNearMe-head .foodNearMe-link a {
+  color: #000;
+  cursor: pointer;
+  font-family: 'Ubermove';
+  font-size: 1.6em;
+  padding: 0 2em;
+}
+
+.foodNearMe .foodNearMe-wrapper .foodNearMe-head .foodNearMe-link .arrowSvg button {
+  padding: 0.6em;
+  border: none;
+  border-radius: 50%;
+}
+
+.foodNearMe .foodNearMe-wrapper .foodNearMe-head .foodNearMe-link .arrowSvg button:focus {
+  outline: none;
+}
+
+.foodNearMe .foodNearMe-wrapper .foodNearMe-Menu .foodNearMe-Menu-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-x: scroll;
+}
+
+.foodNearMe .foodNearMe-wrapper .foodNearMe-Menu .foodNearMe-Menu-wrapper .menu {
+  text-align: center;
+  margin-right: 5.5em;
+  padding-right: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.foodNearMe .foodNearMe-wrapper .foodNearMe-Menu .foodNearMe-Menu-wrapper .menu .img-wrapper {
+  width: 17.5em;
+  height: 17.5em;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.foodNearMe .foodNearMe-wrapper .foodNearMe-Menu .foodNearMe-Menu-wrapper .menu .img-wrapper img {
+  width: 100%;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.foodNearMe .foodNearMe-wrapper .foodNearMe-Menu .foodNearMe-Menu-wrapper .menu a {
+  font-family: 'Ubermove';
+  font-weight: 100;
+  font-size: 1.6em;
+  color: #000;
+  text-decoration: none;
+  padding-top: 0.5em;
+}
+
+/* loveruber */
+.logoAndroidIOS {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1em 0 7em;
+}
+
+.logoAndroidIOS svg {
+  width: 8em;
+}
+
+.logoAndroidIOS h1 {
+  font-family: 'Ubermove';
+  font-weight: 800;
+  font-size: 3.2em;
+  padding: 0 1em;
+}
+
+.logoAndroidIOS .androidIOS {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logoAndroidIOS .androidIOS button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 1em;
+  margin: 0 0.5em;
+  cursor: pointer;
+}
+
+.logoAndroidIOS .androidIOS button:focus {
+  outline: none;
+}
+
+.logoAndroidIOS .androidIOS button svg {
+  width: 1.3em;
+  padding-right: 0.5em;
+}
+
+/* business */
+.business .business-wrapper {
+  margin: 0 4em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 2em;
+  padding-bottom: 4em;
+  border-bottom: 2px solid #e2e2e2;
+}
+
+.business .business-wrapper .box h1 {
+  font-family: 'Ubermove';
+  font-size: 2.8em;
+  font-weight: 800;
+}
+
+.business .business-wrapper .box a {
+  font-family: 'Ubermove';
+  font-size: 1.6em;
+  color: #000;
+}
+
+/* new uber */
+.newUber .newUber-wrapper {
+  margin: 0 4em;
+  padding-bottom: 7em;
+  border-bottom: 2px solid #e2e2e2;
+}
+
+.newUber .newUber-wrapper h1 {
+  font-family: 'Ubermove';
+  font-weight: 800;
+  font-size: 3.6em;
+}
+
+.newUber .newUber-wrapper .newEatOffer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: 24em;
+      grid-template-rows: 24em;
+  grid-column-gap: 2em;
+  overflow-x: scroll;
+}
+
+.newUber .newUber-wrapper .newEatOffer .offerBox {
+  line-height: 1em;
+  position: relative;
+}
+
+.newUber .newUber-wrapper .newEatOffer .offerBox .offerBox-wrapper {
+  width: 44em;
+  height: 18em;
+  overflow: hidden;
+}
+
+.newUber .newUber-wrapper .newEatOffer .offerBox .offerBox-wrapper img {
+  width: 100%;
+}
+
+.newUber .newUber-wrapper .newEatOffer .offerBox p {
+  font-family: 'Ubermove';
+  font-weight: 300;
+  font-size: 2em;
+}
+
+.newUber .newUber-wrapper .newEatOffer .offerBox p:nth-of-type(2) {
+  color: #fff;
+  background-color: #05a357;
+  position: absolute;
+  top: 5;
+  left: 0;
+  font-size: 1.4em;
+  font-family: 'Ubermove';
+  padding: 0.5em 1em;
+  border-radius: 0 25px 25px 0;
+}
+
+.newUber .newUber-wrapper .newEatOffer .offerBox p:nth-of-type(3) {
+  position: absolute;
+  bottom: 7;
+  right: 7;
+  font-family: 'Ubermove';
+  font-size: 1em;
+  color: #000;
+  background-color: #e2e2e2;
+  border-radius: 50%;
+  padding: 1em 0.5em;
+  border-radius: 50%;
+}
+
+.newUber .newUber-wrapper .newEatOffer .offerBox a {
+  color: #000;
+  font-size: 1.4em;
+  font-weight: 400;
+  font-family: 'Ubermove';
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+/* Cities */
+.cities .cities-wrapper {
+  margin: 4em 4em;
+  padding-bottom: 4em;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.cities .cities-wrapper .cities-heading {
+  height: 8em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cities .cities-wrapper .cities-heading h1 {
+  font-size: 3.6em;
+  font-weight: 400;
+  font-family: 'UbermoveBold';
+}
+
+.cities .cities-wrapper .cities-heading a {
+  font-family: 'Ubermove';
+  font-size: 1.6em;
+  font-weight: 100;
+  color: #000;
+}
+
+.cities .cities-wrapper .map {
+  -webkit-filter: grayscale(70%);
+          filter: grayscale(70%);
+  width: 100%;
+}
+
+.cities .cities-wrapper .city {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  margin: 2em 0 0;
+}
+
+.cities .cities-wrapper .city a {
+  text-decoration: none;
+  font-family: 'Ubermove';
+  font-size: 1.6em;
+  font-weight: 100;
+  line-height: 1em;
+  color: #000;
+  margin-right: 1em;
+  padding: 1em 0 1em;
+}
+
+/* Countires */
+.countries {
+  padding-bottom: 4em;
+}
+
+.countries .countries-wrapper {
+  margin: 0 4em;
+}
+
+.countries .countries-wrapper h1 {
+  font-size: 3.6em;
+  font-weight: 400;
+  font-family: 'UbermoveBold';
+}
+
+.countries .countries-wrapper .country {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+.countries .countries-wrapper .country a {
+  text-decoration: none;
+  font-family: 'Ubermove';
+  font-size: 1.6em;
+  font-weight: 100;
+  line-height: 1em;
+  color: #000;
+  margin-right: 1em;
+  padding: 1em 0 1em;
+}
+
+/* AmericanSF */
+.americanSF .americanSF-wrapper {
+  margin: 0 4em;
+  padding-bottom: 7em;
+}
+
+.americanSF .americanSF-wrapper .americanSF-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.americanSF .americanSF-wrapper .americanSF-head h1 {
+  font-family: 'Ubermove';
+  font-weight: 800;
+  font-size: 3.6em;
+  width: 50%;
+}
+
+.americanSF .americanSF-wrapper .americanSF-head .americanSF-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.americanSF .americanSF-wrapper .americanSF-head .americanSF-link a {
+  color: #000;
+  cursor: pointer;
+  font-family: 'Ubermove';
+  font-size: 1.6em;
+  padding: 0 2em;
+}
+
+.americanSF .americanSF-wrapper .americanSF-head .americanSF-link .arrowSvg button {
+  padding: 0.6em;
+  border: none;
+  border-radius: 50%;
+}
+
+.americanSF .americanSF-wrapper .americanSF-head .americanSF-link .arrowSvg button:focus {
+  outline: none;
+}
+
+.americanSF .americanSF-wrapper .americanSF-menu {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: 24em;
+      grid-template-rows: 24em;
+  grid-column-gap: 2em;
+  overflow-x: scroll;
+}
+
+.americanSF .americanSF-wrapper .americanSF-menu .offerBox {
+  line-height: 1em;
+  position: relative;
+}
+
+.americanSF .americanSF-wrapper .americanSF-menu .offerBox .offerBox-wrapper {
+  width: 44em;
+  height: 18em;
+  overflow: hidden;
+}
+
+.americanSF .americanSF-wrapper .americanSF-menu .offerBox .offerBox-wrapper img {
+  width: 100%;
+}
+
+.americanSF .americanSF-wrapper .americanSF-menu .offerBox p {
+  font-family: 'Ubermove';
+  font-weight: 300;
+  font-size: 2em;
+}
+
+.americanSF .americanSF-wrapper .americanSF-menu .offerBox p:nth-of-type(2) {
+  position: absolute;
+  bottom: 7;
+  right: 7;
+  font-family: 'Ubermove';
+  font-size: 1.2em;
+  color: #000;
+  background-color: #e2e2e2;
+  border-radius: 50%;
+  padding: 0.9em 0.7em;
+  border-radius: 50%;
+}
+
+.americanSF .americanSF-wrapper .americanSF-menu .offerBox p:nth-of-type(3) {
+  color: #fff;
+  background-color: #05a357;
+  position: absolute;
+  top: 5;
+  left: 0;
+  font-size: 1.4em;
+  font-family: 'Ubermove';
+  padding: 0.5em 1em;
+  border-radius: 0 25px 25px 0;
+}
+
+.americanSF .americanSF-wrapper .americanSF-menu .offerBox a {
+  color: #000;
+  font-size: 1.4em;
+  font-weight: 400;
+  font-family: 'Ubermove';
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.americanSF .americanSF-wrapper .americanSF-menu .offerBox:nth-last-of-type(-n + 2) p:nth-of-type(2) {
+  color: #05a357;
+}
+
+/* footer */
+footer {
+  height: auto;
+  background-color: #000;
+}
+
+footer .footer-wrapper {
+  margin: 0 4em;
+  height: inherit;
+}
+
+footer .footer-wrapper .footer-top {
+  height: 37em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0em 0 1em 0;
+  border-bottom: 1px solid #fff;
+}
+
+footer .footer-wrapper .footer-top .footer-img {
+  height: 23em;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .footer-wrapper .footer-top .footer-img .app-store {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer-wrapper .footer-top .footer-img .app-store img {
+  cursor: pointer;
+}
+
+footer .footer-wrapper .footer-top .footer-img .app-store img:last-child {
+  margin-left: 1em;
+  width: 14em;
+}
+
+footer .footer-wrapper .footer-top .about-help {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 23em;
+}
+
+footer .footer-wrapper .footer-top .about-help .about-help-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .footer-wrapper .footer-top .about-help .about-help-wrapper .about, footer .footer-wrapper .footer-top .about-help .about-help-wrapper .help {
+  font-family: 'Ubermove';
+  font-weight: 400;
+  font-size: 1.6em;
+  margin-right: 8em;
+}
+
+footer .footer-wrapper .footer-top .about-help .about-help-wrapper .about p, footer .footer-wrapper .footer-top .about-help .about-help-wrapper .help p {
+  line-height: 1.6em;
+}
+
+footer .footer-wrapper .footer-top .about-help .about-help-wrapper .about p a, footer .footer-wrapper .footer-top .about-help .about-help-wrapper .help p a {
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 1px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+footer .footer-wrapper .footer-top .about-help .about-help-wrapper .about p:hover a, footer .footer-wrapper .footer-top .about-help .about-help-wrapper .help p:hover a {
+  text-decoration: underline;
+}
+
+footer .footer-wrapper .footer-top .about-help .about-help-wrapper .about p:first-child a, footer .footer-wrapper .footer-top .about-help .about-help-wrapper .help p:first-child a {
+  font-size: large;
+}
+
+footer .footer-wrapper .footer-bottom {
+  padding: 2em 0 10em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .footer-wrapper .footer-bottom .ptpc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Ubermove';
+  font-weight: 200;
+  font-size: 1.5em;
+  color: #fff;
+}
+
+footer .footer-wrapper .footer-bottom .ptpc a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 2.5em;
+}
+
+footer .footer-wrapper .footer-bottom .ptpc a:hover {
+  text-decoration: underline;
+}
+
+footer .footer-wrapper .footer-bottom .ptpc p {
+  margin-left: 2.5em;
+}
+
+/* Side bar */
+.blackBG {
+  background-color: rgba(0, 0, 0, 0.65);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  z-index: 100000;
+  position: fixed;
+  display: none;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.sideBar-wrapper {
+  width: 28em;
+  height: 100vh;
+  top: 0;
+  left: -50em;
+  background: #fff;
+  position: fixed;
+  z-index: 1000000;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.sideBar-wrapper .sideBar-nav {
+  top: 0;
+  left: 0;
+  height: 90vh;
+  width: 23em;
+  margin: 0 auto;
+  padding: 2em 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sideBar-wrapper .sideBar-nav .signUP {
+  padding: 0.8em 5.2em;
+  background: #000;
+  color: #fff;
+  font-family: 'Ubermove';
+  font-weight: 400;
+  font-size: 1.5em;
+}
+
+.sideBar-wrapper .sideBar-nav .uberAccount .uberAccount-link a {
+  font-family: 'Ubermove';
+  font-weight: 400;
+  font-size: 1.3em;
+  text-decoration: none;
+  color: #000;
+  display: block;
+  letter-spacing: 1px;
+  padding: 1em 0;
+}
+
+.sideBar-wrapper .sideBar-nav .uberAccount .tag-line-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 1em;
+}
+
+.sideBar-wrapper .sideBar-nav .uberAccount .tag-line-logo svg {
+  width: 7em;
+}
+
+.sideBar-wrapper .sideBar-nav .uberAccount .tag-line-logo h1 {
+  font-family: 'Ubermove';
+  font-weight: 100;
+  font-size: 1.6em;
+  padding: 0 1em;
+}
+
+.sideBar-wrapper .sideBar-nav .uberAccount .appStore {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sideBar-wrapper .sideBar-nav .uberAccount .appStore button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0.6em 0.8em;
+  border: none;
+  border-radius: 1em;
+  margin: 0 0.5em;
+  cursor: pointer;
+}
+
+.sideBar-wrapper .sideBar-nav .uberAccount .appStore button:focus {
+  outline: none;
+}
+
+.sideBar-wrapper .sideBar-nav .uberAccount .appStore button svg {
+  width: 1.3em;
+  padding-right: 0.5em;
+}
+/*# sourceMappingURL=style.css.map */
